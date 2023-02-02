@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALARM (BILAL AHMAD)</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="pic">
+    <img src="pic1.jpg" alt="">
+    </div>
+
+    <div id="container">
+        <h1><div id="currTime">23:11:19</div></h1>
+
+      <!-- alarm form   -->
+        <form id="addAlarm">
+        <div id="setTime"> 
+            <input type="number" name="hour"  placeholder="HH" min="00" max="59" > :
+            <input type="number" name="minute" placeholder="MM" min="00" max="59"> :
+            <input type="number" name="second" placeholder="SS" min="00" max="59">
+            
+        </div>
+     <div id="button">
+            <button type="button" id="submit">SET</button>
+            <button type="button" onclick="stopAlarm()">STOP</button>
+              </div>
+
+        </form> 
+        
+        <!-- alarm form  -->
+    </div>
+
+    <div id="upcoming-alarm">
+        <h3>Upcoming Alarms</h3>
+        <ul id="upcoming-alarm-list">
+           
+        </ul>
+     </div>   
+
+    <audio src="jhoome-jo-pathan.mp3" id="audio"></audio>
+  
+
+    <script src="index.js"></script>
+</body>
+</html>

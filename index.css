@@ -1,0 +1,111 @@
+body{
+    background-color: rgb(191, 219, 228);
+}
+
+#pic{
+    height: 150px;
+    width: 250px;
+    margin-left: 38%;
+    }
+
+#pic img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#container{
+    height: 220px;
+    width: 300px;
+    position: relative;
+    border: 2px solid black;
+    margin-left: 35.5%;
+    margin-top: 20px;
+    display: flex;
+    border-radius: 10px;
+    background-color: rgb(147, 147, 235);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#currTime{
+    margin-left: 30%;
+}
+#addAlarm{
+    position: absolute;
+}
+
+#button{
+    display: flex;
+    position: absolute;
+    top: 230px;
+    flex-direction: column;
+    margin-left: 50px;
+    height: 80px;
+    justify-content: space-around;
+}
+
+#setTime{
+    margin-top: 80px;
+    margin-left: 25px;
+}
+
+
+#setTime input{
+    width: 60px;
+    border-radius: 5px;
+    height: 25px;
+    padding: 5px;
+}
+
+#button button{
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    margin-left: 23px;
+    margin-top: -200px;
+}
+
+.listItem{
+    list-style: none;
+    margin-top: -10px;
+}
+
+.delAlarm:hover{
+    background-color: rgb(113, 113, 160);
+}
+
+.delAlarm{
+    border-radius: 10px;
+}
+
+#upcoming-alarm{
+margin-left: 38%;
+font-family: sans-serif;
+display: flex;
+flex-direction: column;
+height: auto;
+}
+h3{
+    margin-left: 5%;
+    margin-top: 40px;
+}
+
+@media screen and (max-width:600px) {
+    #container{
+        margin-left: 10%;
+    }
+
+   #pic{
+     margin-left: 20%;
+   }
+
+   #upcoming-alarm{
+    margin-left: 25%;
+   }
+
+   #upcoming-alarm li{
+    margin-left: -25px;
+ 
+   }
+}
